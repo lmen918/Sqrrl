@@ -1,7 +1,7 @@
-import "../styles/carousel.css";
+import "../styles/featuresGrid.css";
 
-export const Carousel = () => {
-  const carouselContent = [
+export const FeaturesGrid = () => {
+  const featuresContent = [
     {
       title: "Smart Reminders",
       description:
@@ -20,10 +20,10 @@ export const Carousel = () => {
 
   return (
     <div className="features-grid">
-      {carouselContent.map((object, idx) => (
+      {featuresContent.map((feature, idx) => (
         <div className="feature-card" key={idx}>
-          <h3 className="feature-title">{object.title}</h3>
-          <p className="feature-description">{object.description}</p>
+          <h3 className="feature-title">{feature.title}</h3>
+          <p className="feature-description">{feature.description}</p>
         </div>
       ))}
     </div>
