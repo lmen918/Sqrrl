@@ -1,6 +1,7 @@
 import React from "react";
 import { FeaturesGrid } from "./components/FeaturesGrid";
 import "./styles/splash.css";
+import { CtaSection } from "./components/CtaSection";
 
 export const Splash = () => {
   return (
@@ -10,6 +11,7 @@ export const Splash = () => {
         <p className="tagline">Your personal media reminder assistant</p>
       </div>
       <FeaturesGrid />
+      <CtaSection />
     </div>
   );
 };
